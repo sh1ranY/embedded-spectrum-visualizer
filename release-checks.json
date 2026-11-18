@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-18",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)",
+  "host_checks": {
+    "uno_r4": {
+      "passed": true,
+      "scope": "Synthetic tone, DC removal, source labels, ADC bounds, display pixels",
+      "synthetic_inputs_hz": [
+        100,
+        750,
+        3000,
+        8000
+      ],
+      "peak_estimates_hz": [
+        117.188,
+        742.188,
+        3007.812,
+        7968.75
+      ]
+    },
+    "esp32_s3": [
+      {
+        "suite": "signal_core_test",
+        "passed": true,
+        "result": "PASS 74 signal-source / ADC-conversion / FFT / display checks"
+      },
+      {
+        "suite": "recorder_ui_test",
+        "passed": true,
+        "result": "PASS 86 recorder UI checks"
+      },
+      {
+        "suite": "record_store_test",
+        "passed": true,
+        "result": "PASS 332 recording-store checks: WAV integrity/length, source names, PSRAM-only capture/full/write/header/commit/rename failures, EOF/zero padding, historical/partial browse, scoped deletion, blank-only initialization"
+      },
+      {
+        "suite": "display_adapter_test",
+        "passed": true,
+        "result": "PASS matrix chip mapping, test-mode off/startup shutdown, debounce/boot/wrap boundaries, LCD slow init/idle/no-retry fault/explicit recovery"
+      },
+      {
+        "suite": "actual-main-integration",
+        "passed": true,
+        "result": "PASS 53 actual main app integration checks"
+      }
+    ]
+  },
+  "fresh_compile_checks": {
+    "uno_r4": {
+      "passed": true,
+      "core": "arduino:renesas_uno@1.6.0",
+      "program_bytes": 79324,
+      "static_ram_bytes": 21424
+    },
+    "esp32_s3": {
+      "passed": true,
+      "core": "esp32:esp32@3.3.12",
+      "program_bytes": 412907,
+      "static_ram_bytes": 110860
+    }
+  },
+  "scope": "The staged source was compiled for both targets and exercised with host tests. No board was flashed or physically retested for this release."
+}
