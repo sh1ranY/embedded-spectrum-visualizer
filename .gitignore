@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+build/
+*.bin
+*.elf
+*.hex
+*.wav
+esp32-s3-recorder/evidence/host-checks.json
+esp32-s3-recorder/tests/app-integration-verification.json

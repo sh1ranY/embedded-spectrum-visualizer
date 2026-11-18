@@ -1,0 +1,24 @@
+{
+  "board": "UNO R4 WiFi",
+  "firmware": "R4-0.1",
+  "updated_utc": "2026-11-06T11:58:03.632495+00:00",
+  "upload_success": true,
+  "lcd_visual": true,
+  "matrix_1234_upright_left_to_right": true,
+  "buttons_physical": true,
+  "acoustic_response": true,
+  "actual_rate_observed_hz": 20000,
+  "adc_fault_observed": false,
+  "i2c_errors_observed": 0,
+  "observed_scope": "Short bench validation; not calibrated full-band frequency response or endurance test",
+  "compiled_flash_bytes": 79364,
+  "static_ram_bytes": 21424,
+  "historical_mapping": "At the acceptance test, green/D3 was HOLD/LIVE and red/D4 was TIME/FREQ. Physical button colors were exchanged later. Pin functions and firmware are identical.",
+  "archive_note": "Fields selected from the local acceptance and compile records. Firmware hashes below match the archive compile receipt.",
+  "firmware_source_sha256": {
+    "signal_core.h": "b591ab9a7c4c7e92cc3f4d2518668d52ae8a390a3d3d1a29dbee99027392e531",
+    "MC2_R4.ino": "18fdcfe2ad6a862f65d369a69218c7c4a558c5cdd5d45c57501739601343e3da",
+    "live_displays.h": "ed1d98bef5d3200ee98f8f1e34834d891ff3014e3fce919d0198f27217400be0",
+    "r4_sampler.h": "9d46c7c4891733fb928a7ca3a61461b9870b4f6192d0a735568674e824b5d321"
+  }
+}

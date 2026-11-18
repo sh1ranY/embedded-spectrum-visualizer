@@ -1,0 +1,157 @@
+{
+  "scope": "Physical ESP32-S3, generated DEMO PCM only; no microphone/ADC enabled",
+  "utc": "2026-11-05T13:27:49.004570+00:00",
+  "checks": [
+    {
+      "check": "DEMO boot and ADC disabled",
+      "passed": true
+    },
+    {
+      "check": "blank-only storage initialization mounted",
+      "passed": true
+    },
+    {
+      "check": "only prior failed-run DEMO fixture is present",
+      "passed": true
+    },
+    {
+      "check": "initial storage contains no recordings",
+      "passed": true
+    },
+    {
+      "check": "physical8MB PSRAM detected",
+      "passed": true
+    },
+    {
+      "check": "first recording starts",
+      "passed": true
+    },
+    {
+      "check": "TIME switch does not stop recording",
+      "passed": true
+    },
+    {
+      "check": "FREQ switch does not stop recording",
+      "passed": true
+    },
+    {
+      "check": "first clip saved",
+      "passed": true
+    },
+    {
+      "check": "stop drains writer and enters file browser",
+      "passed": true
+    },
+    {
+      "check": "first saved WAV valid, named and labelled DEMO",
+      "passed": true
+    },
+    {
+      "check": "first save without queue/input/write failure",
+      "passed": true
+    },
+    {
+      "check": "second clip saved",
+      "passed": true
+    },
+    {
+      "check": "second recording preserves first file",
+      "passed": true
+    },
+    {
+      "check": "new recording is selected after finalization",
+      "passed": true
+    },
+    {
+      "check": "browser reaches ALL FILES entry",
+      "passed": true
+    },
+    {
+      "check": "browser wraps to first file",
+      "passed": true
+    },
+    {
+      "check": "review reads saved750Hz while live source is set3000Hz",
+      "passed": true
+    },
+    {
+      "check": "TIME available during file review",
+      "passed": true
+    },
+    {
+      "check": "review reaches END",
+      "passed": true
+    },
+    {
+      "check": "all saved samples reviewed at correct WAV length",
+      "passed": true
+    },
+    {
+      "check": "ordinary reset completed without writing flash",
+      "passed": true
+    },
+    {
+      "check": "file IDs and sample counts persist after reboot",
+      "passed": true
+    },
+    {
+      "check": "delete opens explicit confirmation",
+      "passed": true
+    },
+    {
+      "check": "cancel preserves both recordings",
+      "passed": true
+    },
+    {
+      "check": "selected deletion removes only first file",
+      "passed": true
+    },
+    {
+      "check": "ALL FILES opens named clear-all confirmation",
+      "passed": true
+    },
+    {
+      "check": "clear-all removes remaining test recording",
+      "passed": true
+    },
+    {
+      "check": "ten-second clip automatically saved",
+      "passed": true
+    },
+    {
+      "check": "physical10second480000sample WAV complete",
+      "passed": true
+    },
+    {
+      "check": "automatic stop reports time limit",
+      "passed": true
+    },
+    {
+      "check": "full ten-second file reads back to exact EOF",
+      "passed": true
+    },
+    {
+      "check": "maximum-length test clip deleted",
+      "passed": true
+    },
+    {
+      "check": "final LIVE state, ADC off and LCD healthy",
+      "passed": true
+    },
+    {
+      "check": "no recording left running",
+      "passed": true
+    }
+  ],
+  "all_pass": true,
+  "archive_note": "Fields selected from the local final validation record. Firmware hashes below match the archive upload receipt.",
+  "firmware_source_sha256": {
+    "wav_format.h": "5416017d4b231a27181faa0fe10168ab67f0874de6ceb3fde4ad32c106eb8826",
+    "MC2_Live.ino": "d33c7dc96a894c52ca22ad73f93a3930f0d4d4975b2f0370d209d9de7247e5e5",
+    "audio_capture.h": "b1afebecc4628d04e2f75e2e476190a46900823ec0d6c4cc0d8017008e7c32f0",
+    "signal_core.h": "5e2a1314d88f5899fc404f5903e828311d6d8355c4eab03649de279d5bc9f4c4",
+    "live_displays.h": "69f085af40f9675d2e2bd39b17e946f82f8a3f4a6fcee65a1dd3f48345fb26ee",
+    "record_store.h": "f15f02e4a92150957087ba99aa21b14b74e41858a08edf53dd452c85e99e3c74",
+    "recorder_ui.h": "10249a3bb528923e082129b18877379adc04e2f3c7d31e19a536f6fde6ea6abb"
+  }
+}
